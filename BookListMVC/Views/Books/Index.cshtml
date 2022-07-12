@@ -1,0 +1,31 @@
+﻿<br />
+
+<div class="container row p-0 mb-3">
+    <div class="col-12 text-center">
+        <h1>Book List using .NET core MVC</h1>
+
+    </div>
+</div>
+
+<div class="container row p-0 mb-2">
+    <div class="col-3 offset-9">
+        <a asp-action="Upsert" asp-controller="Books" class="btn btn-info form-control text-white">Create a New Book</a>
+    </div>
+</div>
+
+<div class="col-12 border p-3">
+    <table id="DT_books" class="table table-stripped table-bordered border" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+</div>
+@section Scripts{
+    <script src="~/js/bookList.js"></script>
+}
